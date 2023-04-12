@@ -2,8 +2,8 @@
   <div>
     <h1 class="text-4xl my-3 font-bold">Posts</h1>
   </div>
-  <div class="grid sm:grid-cols-4 md:grid-cols-2 grid-col-1 gap-5 w-screen">
-    <div v-for="p in posts.posts" class="mb-[10vh]">
+  <div class="grid sm:grid-cols-4 md:grid-cols-2 grid-col-1 gap-5">
+    <div v-for="p in posts?.posts" class="mb-[10vh]">
       <NuxtLink
         class="font-bold text-2xl underline hover:decoration-primary hover:text-primary"
         :to="`posts/${p.slug.current}`"

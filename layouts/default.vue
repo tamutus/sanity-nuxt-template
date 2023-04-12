@@ -1,5 +1,5 @@
 <template>
-  <header class="header bg-white p-4 flex items-center w-screen px-12">
+  <header class="header bg-white p-4 flex items-center px-12 sticky">
     <nav class="flex justify-between items-between w-screen">
       <NuxtLink to="/" class="font-bold">Home</NuxtLink>
       <div class="flex gap-4 self-start">
@@ -8,7 +8,7 @@
       </div>
     </nav>
   </header>
-  <div class="container p-4 min-w-screen">
+  <div class="container p-4">
     <slot />
   </div>
 </template>

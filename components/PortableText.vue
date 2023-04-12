@@ -1,7 +1,5 @@
 <template>
-  <div class="mb-20 mx-auto w-auto ml-10">
-    <SanityContent :blocks="content[0].body" :serializers="serializers" />
-  </div>
+  <SanityContent :blocks="content[0].body" :serializers="serializers" />
 </template>
 
 <script lang="ts">
