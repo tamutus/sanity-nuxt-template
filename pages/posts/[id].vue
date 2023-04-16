@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="md:max-w-[60%]">
+    <h1 class="font-black text-xl">{{ post[0].title }}</h1>
     <PortableText :content="post" />
   </div>
 </template>
