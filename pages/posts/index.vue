@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
   const query = groq`{ "posts": *[_type == "post"]{title, slug} }`;
-  const { data: posts } = useSanityQuery(query);
+  const { data: posts } = await useSanityQuery(query);
 </script>
 
 <style scoped></style>
