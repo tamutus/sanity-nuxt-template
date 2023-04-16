@@ -1,5 +1,5 @@
 <template>
-  <li class="mx-2 font-bold">- {{ children[0].text }}</li>
+  <li class="m-2 font-semibold" v-for="c in children">{{ c.text }}</li>
 </template>
 
 <script setup lang="ts">
