@@ -4,15 +4,14 @@
       class="sm:max-w-[20vw] max-w-[50vw] object-cover"
       :asset-id="asset._ref"
       auto="format"
-      cl
     />
   </div>
 </template>
 
 <script setup lang="ts">
-  const props = defineProps<{
-    asset: Reference;
-  }>();
+const props = defineProps<{
+  asset: Reference;
+}>();
 </script>
 
 <style scoped></style>

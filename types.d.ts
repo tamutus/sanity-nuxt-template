@@ -6,7 +6,7 @@ type Base = {
   _updatedAt: string;
 };
 
-interface Posts extends Base {
+interface Post extends Base {
   author: Author;
   body: Block[];
   categories: Category[];
@@ -18,14 +18,14 @@ interface Posts extends Base {
 }
 
 interface Image {
-  _type: 'image';
-  _ref: string;
+  _type: "image";
+  _key: string;
   asset: Reference;
 }
 
 interface Reference {
   _ref: string;
-  _type: 'reference';
+  _type: "reference";
 }
 
 interface Author {
@@ -35,23 +35,23 @@ interface Author {
 }
 
 interface Slug {
-  _type: 'slug';
+  _type: "slug";
   current: string;
 }
 
 interface Block {
   _key: string;
-  _type: 'block';
+  _type: "block";
   children: Span[];
   markDefs: any[];
-  style: 'normal' | 'h1' | 'h3' | 'h4' | 'blockqoute';
+  style: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
 }
 
 interface Span {
   _key: string;
-  _type: 'span';
+  _type: "span";
   marks: string[];
-  text: string[];
+  text: string;
 }
 
 interface Category extends Base {
@@ -60,12 +60,12 @@ interface Category extends Base {
 }
 
 interface MainImage {
-  _type: 'image';
+  _type: "image";
   asset: Reference;
 }
 
 interface Title {
-  _type: 'string';
-  title: 'string';
+  _type: "string";
+  title: "string";
   current: string;
 }
