@@ -17,10 +17,10 @@
         <div>
           <p>Website created by</p>
           <p>HarrSoft Studio.</p>
-          <!-- <div id="boring-links">
+          <div id="boring-links">
             <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
             <NuxtLink to="/tos">Terms of Service</NuxtLink>
-          </div> -->
+          </div>
         </div>
       </ImageLogo>
     </footer>

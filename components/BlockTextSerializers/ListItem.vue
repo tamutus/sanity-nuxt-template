@@ -3,9 +3,9 @@
 </template>
 
 <script setup lang="ts">
-  const props = defineProps<{
-    children: Span[];
-  }>();
+const props = defineProps<{
+  children: Span[];
+}>();
 </script>
 
 <style scoped></style>

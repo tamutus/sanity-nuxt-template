@@ -11,15 +11,15 @@
   <div></div>
 </template>
 
-<script setup>
-  const { posts } = defineProps(['posts']);
+<script setup lang="ts">
+const props = defineProps(["posts"]);
 </script>
 
 <style scoped>
-  .thumb {
-    max-height: 330px;
-    min-height: 230px;
-    max-width: 70%;
-    margin: 0 auto;
-  }
+.thumb {
+  max-height: 330px;
+  min-height: 230px;
+  max-width: 70%;
+  margin: 0 auto;
+}
 </style>
